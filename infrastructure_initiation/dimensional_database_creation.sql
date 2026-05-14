@@ -1,0 +1,9 @@
+IF DB_ID('ORDER_DDS') IS NULL
+BEGIN
+    CREATE DATABASE ORDER_DDS;
+END;
+GO
+
+SELECT name
+FROM sys.databases
+WHERE name = 'ORDER_DDS';
