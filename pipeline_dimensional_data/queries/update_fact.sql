@@ -100,4 +100,10 @@ LEFT JOIN {schema_name}.Dim_SOR sor_order_details
     ON sor_order_details.staging_table_name = 'Staging_Order_Details'
 
 WHERE o.OrderDate >= '{start_date}'
+  AND o.OrderDate <= '{end_date}'
+  AND dc.Customer_SK IS NOT NULL
+  AND de.Employee_SK IS NOT NULL
+  AND dp.Product_SK IS NOT NULL
+  AND dship.Shipper_SK IS NOT NULL
+  AND dt.Territory_SK IS NOT NULL;WHERE o.OrderDate >= '{start_date}'
   AND o.OrderDate <= '{end_date}';
