@@ -6,3 +6,4 @@ local_sql_server_config.cfg
 __pycache__/
 *.pyc
 .pytest_cache/
+data/raw/
