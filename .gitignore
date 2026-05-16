@@ -1,0 +1,10 @@
+.DS_Store
+__MACOSX/
+*.zip
+*.save
+__pycache__/
+*.pyc
+.pytest_cache/
+.vs/
+local_sql_server_config.cfg
+sql_server_config.cfg
