@@ -1,8 +1,8 @@
 .DS_Store
-local_sql_server_config.cfglocal_sql_server_config.cfg.save
+__MACOSX/
+*.zip
 local_sql_server_config.cfg
+*.save
 __pycache__/
 *.pyc
-__pycache__/
-*.pyc
-*.pyc
+.pytest_cache/
