@@ -33,7 +33,7 @@ text infrastructure_initiation/ pipeline_dimensional_data/ tests/ logs/ dashboar
 
 ## 1. Clone Repository
 
-bash git clone https://github.com/Rita-Chamiyan/DS206_Project2_Group2.git cd DS206_Project2_Group2 
+bash git clone https://github.com/Rita-Chamiyan/DS206_Project2_Group2.git cd DS206_Project2_Group6
 
 ---
 
