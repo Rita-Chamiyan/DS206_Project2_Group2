@@ -1,16 +1,8 @@
 # DS206 Project 2 — Group 6
 
-This project builds a dimensional data warehouse named `ORDER_DDS` using SQL Server.
+This project builds a dimensional data store named ORDER_DDS using SQL Server.  
+It includes staging tables, dimension tables, fact/error loading scripts, a Python pipeline, logging, tests, and a CLI entry point.
 
-The project includes:
-
-- staging tables
-- dimension and fact tables
-- fact and error loading procedures
-- a Python ETL pipeline
-- logging and execution tracking
-- automated tests
-- a command-line interface (CLI) entry point
 ---
 
 # Group 6 Dimensional Requirements
@@ -33,18 +25,8 @@ Project requirements reference:
 
 # Project Structure
 
+text infrastructure_initiation/ pipeline_dimensional_data/ tests/ logs/ dashboard/  main.py utils.py logging.py sql_server_config.cfg README.md 
 
-infrastructure_initiation/
-pipeline_dimensional_data/
-tests/
-logs/
-dashboard/
-
-main.py
-utils.py
-logging.py
-sql_server_config.cfg
-README.md
 ---
 
 # Setup Instructions
@@ -172,6 +154,3 @@ The tests use mocking and do not require a live SQL Server connection.
 - Dashboard file location:
 
 text dashboard/group6_dashboard.pbix 
-
-
-
