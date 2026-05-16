@@ -272,6 +272,8 @@ def execute_sql_script(
         batches = split_sql_batches(sql_script)
 
         for batch in batches:
+            print("\nEXECUTING SQL BATCH:")
+            print(batch[:1500])
             cursor.execute(batch)
 
         if use_transaction:
