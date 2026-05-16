@@ -105,5 +105,4 @@ WHERE o.OrderDate >= '{start_date}'
   AND de.Employee_SK IS NOT NULL
   AND dp.Product_SK IS NOT NULL
   AND dship.Shipper_SK IS NOT NULL
-  AND dt.Territory_SK IS NOT NULL;WHERE o.OrderDate >= '{start_date}'
-  AND o.OrderDate <= '{end_date}';
+  AND dt.Territory_SK IS NOT NULL;
