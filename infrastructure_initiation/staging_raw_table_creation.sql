@@ -51,6 +51,8 @@ CREATE TABLE dbo.Staging_Employees (
     Country NVARCHAR(100),
     HomePhone NVARCHAR(50),
     Extension NVARCHAR(20),
+    Notes NVARCHAR(MAX),
+    PhotoPath NVARCHAR(255),
     ReportsTo INT
 );
 
@@ -99,7 +101,9 @@ CREATE TABLE dbo.Staging_Products (
 CREATE TABLE dbo.Staging_Region (
     staging_raw_id_sk INT IDENTITY(1,1) PRIMARY KEY,
     RegionID INT NOT NULL,
-    RegionDescription NVARCHAR(100)
+    RegionDescription NVARCHAR(100),
+    RegionCategory NVARCHAR(100),
+    RegionImportance NVARCHAR(100)
 );
 
 CREATE TABLE dbo.Staging_Shippers (
@@ -129,6 +133,7 @@ CREATE TABLE dbo.Staging_Territories (
     staging_raw_id_sk INT IDENTITY(1,1) PRIMARY KEY,
     TerritoryID NVARCHAR(20) NOT NULL,
     TerritoryDescription NVARCHAR(100),
+    TerritoryCode NVARCHAR(100),
     RegionID INT
 );
 GO
